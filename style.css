@@ -1,0 +1,649 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+
+/*.rowdies-light {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+*/  
+body
+{
+    margin: 0;
+    background-color: rgb(214, 214, 214); /*rgb(214, 214, 214);*/
+}
+
+.titlu
+{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(202, 30, 11);
+    background-image: linear-gradient(to top,rgb(202, 30, 11),rgba(225, 107, 68, 0.825));
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*height:5rem;*/
+    margin-bottom: 5%;
+    padding: 0 5%;
+    box-shadow: 0 3px 8px 2px rgba(90, 90, 90, 0.667);
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    /*padding-right: 5%;*/
+    flex-wrap: nowrap;
+    /*height:5rem;*/
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0;
+    /*float: left;*/
+    /*height:5rem;*/
+    /*border-left-style: solid;
+    border-right-style: solid;
+    border-left-color:rgba(225, 107, 68, 0.825) ;
+    border-right-color:rgba(225, 107, 68, 0.825) ;*/
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a{
+    display: block;
+    text-decoration: none;
+    color:beige;
+    text-align: center;
+    /*height:5rem;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 15px;
+    border-left: solid rgba(225, 107, 68, 0.825) 2px;
+    border-right: solid rgba(225, 107, 68, 0.825) 2px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;   
+}
+
+nav li a:nth-of-type(1){
+    border-right: none;/* revin dupa sa schimb */
+}
+
+p
+{
+    margin-bottom: 2rem;
+}
+
+.background-intro
+{
+position:relative;
+width:100% ;
+z-index:-3;
+overflow: hidden;
+}
+
+.auto-scroller
+{
+     display: flex;
+     /*justify-content: center;*/
+     /*gap: 5vw;*/
+     flex-wrap: nowrap;
+     height: 40vh;
+     overflow: hidden;
+     mask-image: linear-gradient(to right, rgb(0,0,0,0), rgb(0,0,0,1) 20%, rgb(0,0,0,1) 80%, rgb(0,0,0,0));
+     position: relative;
+} 
+
+.auto-scroller-container
+{
+    display: flex; 
+    /*transition: transform 0.5s ease-in-out; */ /*animation: auto-scroll 60s linear infinite;*/ /*pause 10s 3s infinite; */
+    margin: 0 5%;
+    gap: 5vw;
+
+
+}
+
+@keyframes auto-scroll 
+{
+  
+    0% { transform: translateX(0); }
+    10% { transform: translateX(calc(-45vw*1)); }
+    20% { transform: translateX(calc(-45vw*2)); }
+    30% { transform: translateX(calc(-45vw*3)); }
+    40% { transform: translateX(calc(-45vw*4)); }
+    50% { transform: translateX(calc(-45vw*5)); }
+    60% { transform: translateX(calc(-45vw*6)); }
+    70% { transform: translateX(calc(-45vw*7)); }
+    80% { transform: translateX(calc(-45vw*8)); }
+    90% { transform: translateX(calc(-45vw*9)); }
+    100% { transform: translateX(calc(-45vw*10)); }  /*100% { transform: translateX(calc(-50% - 5vw)); }*/  
+}
+
+/*.intro-item:hover{
+    animation-play-state: paused;
+}
+
+Pause animation (delay)
+@keyframes pause {
+    0% {
+        transform: translateX(0); No movement initially 
+    }
+    100% {
+        transform: translateX(0); Keep the container in place during the pause 
+    }
+}*/
+
+.intro-item
+{   
+    width: 40vw;
+    height: 100%;
+    border: solid grey ;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: rgb(176, 174, 174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 0 2.5vw;*/
+    animation-name: auto-scroll;
+    animation-duration:  100s; 
+    animation-timing-function: ease-in-out;
+    animation-delay:  0s;
+    animation-iteration-count: infinite;
+}
+
+.auto-scroller-container:hover .intro-item
+{
+    animation-play-state: paused;
+}
+
+.introducere
+{
+    height: 100%; /* 350px valoarea vehce*/
+    box-sizing: border-box;
+    padding: 0 5%;
+    margin: 0; /*17% aia veche s-d*/
+    border-style: solid;
+    border-color:burlywood;
+    border-radius: 55px;
+    overflow: auto;
+    overflow-x: hidden; /*sa nu uit sa schimb sa pun scrollbar track transparent sau ceva de genul*/
+    /*scrollbar-width:none ;*/
+    /*::-webkit-scrollbar{
+        border-radius: 2%;
+    }*/
+    /*box-shadow: 0px -5px 5px 5px rgb(153, 153, 153) inset; */
+    /*box-shadow: 0px -5px 5px 5px white inset;*/
+    scrollbar-color: burlywood transparent; /*mai trb ajustat cu prop celelalte margin start end... */
+}
+.introducere h3
+{
+    text-align: center;
+}
+/*.introducere:hover
+{
+    scrollbar-width:auto ;
+}*/
+.div-blur{
+
+    width:100%;
+    height: 8%;
+    backdrop-filter: blur(1.5px);
+}
+
+.div-blur:first-child{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.div-blur:last-child{
+    position:sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/*pagina de tipuri */
+.intro-tipuri
+{   
+    padding: 2% 7%;
+    margin:5%;
+    border-right: solid  rgba(225, 107, 68, 0.825) ;
+    border-bottom: solid  rgba(225, 107, 68, 0.825) ;
+    box-shadow: -3px -3px 8px 2px rgba(119, 119, 119, 0.522);
+    background-image: linear-gradient(166deg, rgb(214, 214, 214) 28%, rgba(225, 107, 68, 0.825));
+    /*background-image: radial-gradient(at top left, rgb(214, 214, 214) 38%, rgba(225, 107, 68, 0.825));*/
+
+}
+
+hr
+{
+    margin:2.5% ;
+    
+}
+
+.t-sectiuni
+{
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(147, 139, 139); /* rgb(199, 95, 95);*/
+}
+
+.t-sectiuni:nth-child(2)
+{
+    color:rgb(199, 95, 95);
+}
+/*.bcgrd-t
+{   
+    display: inline-block;
+    background-color:rgba(147, 139, 139, 0.455) ;
+
+}*/
+main
+{   
+    padding: 0 10% ; /* 0 5% vehea valoare*/
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;   
+    color: rgb(147, 139, 139);
+}
+
+.m-tip
+{
+    text-align: center;
+}
+.muschi-tipuri
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.muschi-tip
+{     
+    background-color: transparent;
+    width: 200px;
+    height: 275px;
+    perspective: 1000px;
+}
+
+/*.flip-card-front img
+{
+    height: 200px;
+    width: 200px;
+}*/
+.flip-card
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.muschi-tip:hover .flip-card
+{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #cca86b;
+    color:rgb(199, 95, 95);
+  }
+  
+.muschi-netezi
+{
+    height: 200px;
+    width: 200px;
+}  
+  .flip-card-back {
+    background-color: #cca86b;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.s-muschi , .f-muschi
+{
+    color:rgb(199, 95, 95);
+}  
+
+.img-muschi1
+{
+    height: 15rem;
+}
+
+.img-muschi2
+{
+    height: 10rem;
+}
+.struct-muschi
+{
+    display:flex;
+}
+
+li b
+{
+    color: rgb(113, 108, 108);
+}
+
+.t-fibre li
+{
+    margin-bottom: 0.5%;
+}
+
+.btn-la-tip
+{
+    text-decoration-line: none;
+    color:rgb(116, 116, 174);
+}
+
+#icon-gantera
+{
+    color:rgb(116, 116, 174);
+}
+
+.mind-muscle
+{
+    color: #ffffff; /*#6b87cc;*/
+    text-align: center;
+
+}
+
+.mind-muscle-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient(farthest-corner at bottom,#6b87cc 10%, #6b87cc00 60%);
+}
+
+.mind-muscle-img
+{
+    height: 25vh; 
+}
+
+.mind-muscle-h3
+{
+    color: #6b87cca8;  
+}
+
+.msj-quiz
+{
+    text-align: center;
+    padding: 0.5% 5%;
+    margin-bottom: 2%;
+    color:rgb(116, 116, 174);
+    border-radius: 12px;
+    background-image:radial-gradient( #8ad9fc ,#6b87cc);
+}
+
+.msj-quiz a
+{
+    text-decoration-line: none;
+    color:aliceblue;
+    padding: 0.5% 2.5%;
+    margin-bottom:5% ;
+    background-color: rgba(173, 173, 177, 0.512); /*#6b87cc5e*/
+    backdrop-filter: blur(10px);
+}
+
+.footer-1
+{
+    height:20vh ;
+    background-color: #d39d3fbb;
+
+}
+
+.footer-1 a
+{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+    text-decoration-line: none;
+    color: #ffffff;
+}
+
+.footer-icon
+{
+    height: 2.5rem;
+}
+
+/*PAGINA DE QUIZ*/
+.body-quiz
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+
+}
+
+.quiz-container
+{
+    display: flex;
+    column-gap: 3%;
+}
+.text-box
+{
+    margin-top: 5%;
+    padding: 3% 5% ;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px 20px #95a0a590;
+}
+
+.dreapta-quiz
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+}
+
+.finish
+{
+    flex-grow: 2;
+    text-align: center;
+    padding: 1%;
+    border-radius: 15px;
+    border: solid #abacaf;
+    background-color: #abacaf40;
+}
+
+.finish button
+{
+    border-radius: 3px;
+    border-color: transparent;
+    background-image: linear-gradient(to bottom right,#6b87cc,#8ad9fc);
+    color:#ffffff;
+    /*width: 25%;*/ padding: 0 5%;
+    height: 15%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+.finish button:hover
+{
+    box-shadow:  0px 0px 30px 10px #6b87cc, 0px 0px 30px 18px #8ad9fc;
+}
+
+
+.variante-box
+{
+    flex-grow: 3;
+    padding: 2%;
+    /*min-height: fit-content;*/
+    /*min-width: fit-content;*/ /*width: 487.98px;
+    
+    box-sizing: border-box; */
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 2%;
+    border-radius: 15px;
+    border: solid #abacaf;
+    background-color: #abacaf40;
+    
+}
+
+.optiune
+{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2px 5px;
+    background-color: #abacaf;
+    height: fit-content;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.a-quiz
+{
+    text-decoration: none;
+    margin-top: 3%;
+    background-image: linear-gradient(to bottom right,#6b87cc,#8ad9fc);
+    color:#ffffff;
+    padding: 0.5% 2%;
+    border-radius: 5px;
+    border: solid 
+}
+
+.text-box p
+{
+    display: inline-block;
+}
+
+.text-box
+{
+    color: #707072;
+
+}
+
+.raspuns-box
+{   
+    display: inline-block;
+    background-color: #abacaf82;
+    width: 15%;
+    height:25px;
+    border: solid 1px;
+    margin: 0 2px;
+    border-radius: 3px;
+
+}
+
+/*PAGINA DE PROGRAME*/
+.program-antrenament
+{
+    background-color: #e3d3b784;
+    border: solid 1px #d1aa6284;
+    border-radius: 45px;
+    border-top-left-radius: 0;
+    padding: 6rem;
+    margin: 0 10vw;
+}
+
+.program-antrenament span 
+{
+    text-align: center;
+}
+
+.span-1
+{
+    text-align: center;
+}
+
+.prog-antr-nivel
+{
+    position: absolute;
+    background-color:#ffffff;
+    border: solid;
+    border: solid 1px #d1aa6284;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    margin: 0 10vw;
+
+}
+
+
+
+/*POATE SCHIMBI CURSORUL CU ILA DE ANTEBRATE PUI BUTON SA SCHIMBI*/
+
+
+/*
+.background
+{
+    position: relative;
+    z-index:-3;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) rotateX('25') scale(1);
+    }
+    30%
+    {
+        transform: translateY(50vh) rotateY('30') scale(1);
+    }
+    100%
+    {
+        transform: scale(0);
+    }
+}*/
+

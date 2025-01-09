@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz din noțiuni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="body-quiz">
+    <div class="quiz-container">
+    <div class="text-box">
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor sit amet.
+                    <div class="raspuns-box"  data-occupied="false" data-corect="3" ></div>
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet.
+                    <div class="raspuns-box"  data-occupied="false" data-corect="5" ></div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nisi!
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit. 
+                    <div class="raspuns-box"  data-occupied="false" data-corect="6" ></div>
+                    Lorem, ipsum dolor.
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet.
+                    <div class="raspuns-box"  data-occupied="false" data-corect="2" ></div>
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet.
+                    <div class="raspuns-box"  data-occupied="false" data-corect="7" ></div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nisi!
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit. 
+                    <div class="raspuns-box"  data-occupied="false" data-corect="1" ></div>
+                    Lorem, ipsum dolor.
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet.
+                    <div class="raspuns-box"  data-occupied="false" data-corect="4" ></div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nisi!
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="dreapta-quiz">
+        <div class="variante-box"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+            <div class="optiune" id="optiune-1" draggable="true" data-corect="1" >raspuns</div>
+            <div class="optiune" id="optiune-2" draggable="true" data-corect="2" >raspuns mai lung</div>
+            <div class="optiune" id="optiune-3" draggable="true" data-corect="3" >raspuns</div>
+            <div class="optiune" id="optiune-4" draggable="true" data-corect="4" >raspunsul</div>
+            <div class="optiune" id="optiune-5" draggable="true" data-corect="5" >raspuns</div>
+            <div class="optiune" id="optiune-6" draggable="true" data-corect="6" >raspuns</div>
+            <div class="optiune" id="optiune-7" draggable="true" data-corect="7" >raspuns</div>
+        </div>
+        <div class="finish">
+            <button type="button" id="verifica-Raspunsuri">Gata!</button> <!--Finish!/Terminat/Done-->
+            <p id="text-rezultat">baiiiii</p>
+        </div>
+        
+    </div>
+    </div>
+
+    <a class="a-quiz" href="index.html">Înapoi la site</a>
+
+</body>
+<script src="index.js"></script>
+</html>
