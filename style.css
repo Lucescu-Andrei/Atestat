@@ -586,10 +586,57 @@ li b
 }
 
 /*PAGINA DE PROGRAME*/
+.pag-2
+{
+    background-color: #f6e4d7; /*#e9c5a567;*/
+}
+
+/*ANIMAȚIA DIN BACKGROUND*/
+.background-icons-effect span
+{
+    position: absolute;
+    /* z-index: -1; */
+
+}
+
+.background-icons-effect span:nth-child(n)
+{
+    color:#ca3c3c;
+}
+
+.background-icons-effect span:nth-child(2n)
+{
+    color:#c9b83a;
+}
+
+.background-icons-effect span:nth-child(3n)
+{
+    color:#ca3c3c;
+}
+
+.background-icons-effect span:nth-child(1)
+{
+    top: 15%;
+    left: 6%;
+}
+
+.background-icons-effect span:nth-of-type(2)
+{
+    top: 22%;
+    left: 10%;
+}
+
+.background-icons-effect span:nth-of-type(2)
+{
+    top: 18%;
+    left: 18%;
+}
+
 .program-antrenament
 {
-    background-color: #e3d3b784;
-    border: solid 1px #d1aa6284;
+    background-color: #ffeead; /*#e3d3b784*/
+    border: solid 1px #ffcc5c; /*#d1aa6284;*/
+    color: rgb(248, 185, 122); /*#f2ae72; /*#ff6f69*/
     border-radius: 45px;
     border-top-left-radius: 0;
     padding: 6rem;
@@ -609,14 +656,16 @@ li b
 .prog-antr-nivel
 {
     position: absolute;
-    background-color:#ffffff;
+    background-color:rgb(255, 204, 153);
+    color: rgb(170, 117, 44);
     border: solid;
-    border: solid 1px #d1aa6284;
+    border: solid 1px rgb(255, 204, 153);
     border-radius: 20px;
     border-top-left-radius: 0;
     margin: 0 10vw;
-
+    box-shadow: 2px 2px 4px 3px rgba(170, 118, 44, 0.418);
 }
+
 
 .program-antrenament
 {
