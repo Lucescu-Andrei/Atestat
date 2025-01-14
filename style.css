@@ -551,6 +551,18 @@ li b
     color: #ffffff;
 }
 
+.optiune-animatie
+{
+    animation: ptDrag ease-out 1s;
+}
+
+@keyframes ptDrag 
+{
+    to{
+        transform: scale(1.2);
+    }
+    
+}
 .a-quiz
 {
     text-decoration: none;
@@ -589,32 +601,161 @@ li b
 .pag-2
 {
     background-color: #f6e4d7; /*#e9c5a567;*/
+    background-attachment: fixed;
 }
 
 /*ANIMAȚIA DIN BACKGROUND*/
 .background-icons-effect span
 {
     position: absolute;
-    /* z-index: -1; */
+    opacity: 0;
+    /* animation: fallAndRotate 8s linear infinite;  */
+    animation: fall 10s infinite, rotate 10s infinite linear;
+    font-family: 'Material Symbols Rounded', sans-serif;
+    font-size: 48px; /* Make icons larger for better visibility */
+        /* z-index: -1; */
 
 }
 
-.background-icons-effect span:nth-child(n)
+.background-icons-effect
+{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+/* @keyframes fallAndRotate {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px) rotate(0deg);
+    }
+    10% { /* Quick fade in 
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 100vh) rotate(720deg);
+    }
+} */
+
+/* Falling animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(calc(100vh + 50px)) rotate(360deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Rotation animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Randomly position each icon and delay its animation */
+/* .background-icons-effect span:nth-child(1) {
+    animation-delay: 0s;
+    left: 10%;
+}
+.background-icons-effect span:nth-child(2) {
+    animation-delay: 1s;
+    left: 20%;
+}
+.background-icons-effect span:nth-child(3) {
+    animation-delay: 2s;
+    left: 30%;
+}
+.background-icons-effect span:nth-child(4) {
+    animation-delay: 3s;
+    left: 40%;
+}
+.background-icons-effect span:nth-child(5) {
+    animation-delay: 4s;
+    left: 50%;
+}
+.background-icons-effect span:nth-child(6) {
+    animation-delay: 5s;
+    left: 60%;
+}
+.background-icons-effect span:nth-child(7) {
+    animation-delay: 6s;
+    left: 70%;
+}
+.background-icons-effect span:nth-child(8) {
+    animation-delay: 7s;
+    left: 80%;
+}
+.background-icons-effect span:nth-child(9) {
+    animation-delay: 8s;
+    left: 90%;
+}
+.background-icons-effect span:nth-child(10) {
+    animation-delay: 9s;
+    left: 10%;
+}
+.background-icons-effect span:nth-child(11) {
+    animation-delay: 10s;
+    left: 20%;
+}
+.background-icons-effect span:nth-child(12) {
+    animation-delay: 11s;
+    left: 30%;
+}
+.background-icons-effect span:nth-child(13) {
+    animation-delay: 12s;
+    left: 40%;
+}
+.background-icons-effect span:nth-child(14) {
+    animation-delay: 13s;
+    left: 50%;
+}
+.background-icons-effect span:nth-child(15) {
+    animation-delay: 14s;
+    left: 60%;
+} */
+
+.background-icons-effect span:nth-child(3n+1)
 {
     color:#ca3c3c;
 }
 
-.background-icons-effect span:nth-child(2n)
+.background-icons-effect span:nth-child(3n+2)
 {
     color:#c9b83a;
 }
 
-.background-icons-effect span:nth-child(3n)
+.background-icons-effect span:nth-child(3n+3)
 {
     color:#ca3c3c;
 }
 
-.background-icons-effect span:nth-child(1)
+/* .background-icons-effect span:nth-child(1)
 {
     top: 15%;
     left: 6%;
@@ -626,11 +767,173 @@ li b
     left: 10%;
 }
 
-.background-icons-effect span:nth-of-type(2)
+.background-icons-effect span:nth-of-type(3)
 {
     top: 18%;
     left: 18%;
 }
+
+.background-icons-effect span:nth-child(4)
+{
+    top: 15%;
+    left: 26%;
+}
+
+.background-icons-effect span:nth-of-type(5)
+{
+    top: 34%;
+    left: 10%;
+}
+
+.background-icons-effect span:nth-of-type(6)
+{
+    top: 26%;
+    left: 30%;
+}
+
+.background-icons-effect span:nth-child(7)
+{
+    top: 30%;
+    left: 6%;
+}
+
+.background-icons-effect span:nth-of-type(8)
+{
+    top: 22%;
+    left: 14%;
+}
+
+.background-icons-effect span:nth-of-type(9)
+{
+    top: 42%;
+    left: 18%;
+}
+
+.background-icons-effect span:nth-child(10)
+{
+    top: 15%;
+    left: 22%;
+}
+
+.background-icons-effect span:nth-of-type(11)
+{
+    top: 65%;
+    left: 23%;
+}
+
+.background-icons-effect span:nth-of-type(12)
+{
+    top: 12%;
+    left: 45%;
+}
+
+.background-icons-effect span:nth-child(13)
+{
+    top: 51%;
+    left: 6%;
+}
+
+.background-icons-effect span:nth-of-type(14)
+{
+    top: 34%;
+    left: 43%;
+}
+
+.background-icons-effect span:nth-of-type(15)
+{
+    top: 22%;
+    left: 22%;
+} */
+/* .background-icons-effect span:nth-child(1) {
+    top: 5%; 
+    left: 2%; 
+}
+
+.background-icons-effect span:nth-of-type(2) {
+    top: 12%;
+    left: 35%; 
+}
+
+.background-icons-effect span:nth-of-type(3) {
+    top: 28%;
+    left: 65%; 
+}
+
+.background-icons-effect span:nth-child(4) {
+    top: 45%; 
+    left: 15%;
+}
+
+.background-icons-effect span:nth-of-type(5) {
+    top: 62%; 
+    left: 80%; 
+}
+
+.background-icons-effect span:nth-of-type(6) {
+    top: 8%;
+    left: 90%; 
+}
+
+.background-icons-effect span:nth-child(7) {
+    top: 92%; 
+    left: 5%;
+}
+
+.background-icons-effect span:nth-of-type(8) {
+    top: 75%;
+    left: 40%;
+}
+
+.background-icons-effect span:nth-of-type(9) {
+    top: 35%;
+    left: 25%;
+}
+
+.background-icons-effect span:nth-child(10) {
+    top: 55%;
+    left: 70%;
+}
+
+.background-icons-effect span:nth-of-type(11) {
+    top: 20%;
+    left: 55%;
+}
+
+.background-icons-effect span:nth-of-type(12) {
+    top: 85%;
+    left: 10%;
+}
+
+.background-icons-effect span:nth-child(13) {
+    top: 40%;
+    left: 95%; 
+}
+
+.background-icons-effect span:nth-of-type(14) {
+    top: 15%;
+    left: 75%;
+}
+
+.background-icons-effect span:nth-of-type(15) {
+    top: 60%;
+    left: 45%;
+} */
+
+.background-icons-effect span:nth-child(1) { left: 5%; animation-delay: 0s; }
+.background-icons-effect span:nth-child(2) { left: 20%; animation-delay: 2s; }
+.background-icons-effect span:nth-child(3) { left: 35%; animation-delay: 4s; }
+.background-icons-effect span:nth-child(4) { left: 50%; animation-delay: 6s; }
+.background-icons-effect span:nth-child(5) { left: 65%; animation-delay: 8s; }
+.background-icons-effect span:nth-child(6) { left: 80%; animation-delay: 10s; }
+.background-icons-effect span:nth-child(7) { left: 15%; animation-delay: 12s; }
+.background-icons-effect span:nth-child(8) { left: 30%; animation-delay: 14s; }
+.background-icons-effect span:nth-child(9) { left: 45%; animation-delay: 16s; }
+.background-icons-effect span:nth-child(10) { left: 60%; animation-delay: 18s; }
+.background-icons-effect span:nth-child(11) { left: 75%; animation-delay: 20s; }
+.background-icons-effect span:nth-child(12) { left: 10%; animation-delay: 22s; }
+.background-icons-effect span:nth-child(13) { left: 25%; animation-delay: 24s; }
+.background-icons-effect span:nth-child(14) { left: 40%; animation-delay: 26s; }
+.background-icons-effect span:nth-child(15) { left: 55%; animation-delay: 28s; }
 
 .program-antrenament
 {
@@ -665,7 +968,6 @@ li b
     margin: 0 10vw;
     box-shadow: 2px 2px 4px 3px rgba(170, 118, 44, 0.418);
 }
-
 
 .program-antrenament
 {
