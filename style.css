@@ -243,7 +243,10 @@ Pause animation (delay)
     box-shadow: -3px -3px 8px 2px rgba(119, 119, 119, 0.522);
     background-image: linear-gradient(166deg, rgb(214, 214, 214) 28%, rgba(225, 107, 68, 0.825));
     /*background-image: radial-gradient(at top left, rgb(214, 214, 214) 38%, rgba(225, 107, 68, 0.825));*/
-
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#86878a;
 }
 
 hr
@@ -418,6 +421,68 @@ li b
     color: #6b87cca8;  
 }
 
+.overload-hypertrofi-titlu
+{
+    color: #d66d6d;
+}
+
+.overload-hypertrofi
+{
+    display: flex;
+    
+}
+
+.overload-hypertrofi-s
+{
+    flex: 2;
+}
+
+.overload-hypertrofi-s p
+{
+    margin-bottom: 0;
+}
+
+.overload-hypertrofi-d
+{
+    flex: 1;
+    margin: 0.5%;
+    padding: 2%;
+    box-sizing: border-box;
+    color: #6c4c11;
+    text-align: center;
+    /*border:solid 1px;
+    border-radius: 12px;*/
+    background-image: url("/images/13161-copie.jpg");
+    mask-image: url("/images/foaie-veche-removebg-preview.png");
+    mask-repeat: no-repeat;
+    /* box-shadow:  0px 0px 5px 30px  #b69121; */
+
+}
+
+.overload-hypertrofi-d h3
+{
+    color:#805b10;
+}
+
+.definitie
+{
+    border-left: solid 5px #d67f44;
+    padding: 1% 2%;
+    background-color: #d6976d44;
+    color: #d67f44;
+}
+
+.definitie-3 , .definitie-4
+{
+    display: flex; 
+    flex-direction: column; 
+    border-left: solid 5px #d6ae6d;
+    background-color: #d6ae6d44;
+    color:#d6ae6d;
+    padding: 1% 2%;
+}
+ 
+
 .msj-quiz
 {
     text-align: center;
@@ -442,7 +507,9 @@ li b
 {
     height:20vh ;
     background-color: #d39d3fbb;
-
+    border-radius: 40px 40px 0 0;
+    border: solid 2.5px #50380ebb;
+    margin: 0 1.25vw; 
 }
 
 .footer-1 a
@@ -598,11 +665,17 @@ li b
 }
 
 /*PAGINA DE PROGRAME*/
-.pag-2
+.pag-2, .pag-3, .pag-1 /*BACKGROUND SI PT PAG. APARATE*/
 {
     background-color: #f6e4d7; /*#e9c5a567;*/
     background-attachment: fixed;
 }
+/*CULOAREA LA SELECTIA DE TEXT*/
+/*p::selection
+{
+    background-color: #6b87cc;
+    color: #8ad9fc;
+} */
 
 /*ANIMAȚIA DIN BACKGROUND*/
 .background-icons-effect span
@@ -935,6 +1008,42 @@ li b
 .background-icons-effect span:nth-child(14) { left: 40%; animation-delay: 26s; }
 .background-icons-effect span:nth-child(15) { left: 55%; animation-delay: 28s; }
 
+.btn-intro-tipuri
+{   
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 7px;
+}
+
+.btn-intro-tipuri a
+{
+    text-decoration: none;
+}
+
+.btn-intro-tipuri div
+{
+    border-radius: 5px;
+    padding: 1% 0.5%;
+    background-image: linear-gradient(166deg, rgb(214, 214, 214) 28%, rgba(225, 107, 68, 0.825));
+}
+
+.lista-antr div 
+{
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.lista-criterii li::marker
+{
+    /* font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+    font-size:larger;
+    font-weight: 900;
+}
+
 .program-antrenament
 {
     background-color: #ffeead; /*#e3d3b784*/
@@ -1002,3 +1111,157 @@ li b
     }
 }*/
 
+/*PAGINA DESPRE APARATE*/
+
+.pag-3
+{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+.pag-3 p
+{
+    color: #d66d6d; /*#d66d6d;*/
+}
+
+.sectiune-cautare
+{
+    display: flex;
+    column-gap: 25%;
+    background-color: rgba(80, 78, 78, 0.326);
+    box-sizing: border-box;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.search-container input
+{
+    width:max-content;
+    height: fit-content;
+    /* padding: 5px; */
+    margin: 0 4px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+    color: rgb(219, 134, 37);
+    color: rgba(241,142,78,0.8643908246892507);
+    background: transparent;
+    border: none;
+    outline: none; 
+}
+
+.search-container input::placeholder
+{
+    color: rgba(241,142,78,0.8643908246892507);
+}
+
+.search-container
+{
+    
+    display: flex;
+    flex-direction: row;
+    /* background-image: linear-gradient(to bottom right, rgb(222, 180, 102), rgb(233, 96, 96) ); */
+    background: rgb(238,209,174);
+    background: linear-gradient(135deg, rgba(238,209,174,0.7915616930365896) 0%, rgba(241,142,78,0.8643908246892507) 100%);
+    border-radius: 25px;
+    border: solid 1px ;
+    height: fit-content;
+    width: min(100%, 300px);
+    width:max-content;
+    /* width: min(308px,100%); */
+    align-items: center;
+    padding: 8px;
+    /*justify-content: center;*/
+}
+
+ .search-help
+{
+    margin-right: 0;
+    color:rgba(238,209,174,0.7915616930365896);
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.search-help:hover
+{
+    border-radius: 100%;
+    background-color: rgba(238, 209, 174, 0.304);
+}
+
+.search-container button
+{
+    background: none;
+    background-color: transparent;
+    border: none;
+}
+
+.search-container:focus-within
+{
+    border-color: rgba(241, 97, 78, 0.864) ;
+}
+
+.search-icon
+{
+    color: rgba(241,142,78,0.8643908246892507);
+}
+
+.sectiune-cautare-img
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 446px;
+}
+
+.sectiune-cautare-img img
+{
+    /* height: 420px; */
+    --height-img-cautare:420px;
+    height: min(var(--height-img-cautare),100%);
+    width: fit-content;
+    /*max-width: 100%;
+            height: auto;   /*trebuie de vazut container chestii*/ 
+    border-radius: 30px ;
+
+}
+
+.sectiune-cautare-img button
+{
+    background: none;
+    background-color: transparent;
+    border: none;
+    width:fit-content;
+    justify-self: center;
+}
+
+.sectiune-cautare-img button:hover
+{
+    background-color: rgba(200, 200, 200, 0.708);
+    border-radius: 7px;
+}
+
+.sectiune-cautare-img button span
+{
+    display: flex;
+    justify-self: center;
+    color: #707072;
+}
+
+
+
+.sectiune-cautare-img img:nth-of-type(2)
+{
+    display: none;
+}
+
+.denumire-muschi {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+}
