@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=help" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=360" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
-<body>
+<body class="pag-3">
     <header>
         <h1 class="titlu">Despre aparatele de fitness</h1>
         <nav>
@@ -21,6 +24,53 @@
             </ul>
         </nav>
     </header><!--tot ceea ce ține de sală/despre fitness/bodybuilding-->    
+
+    <main>
+
+        <div class="sectiune-cautare">
+
+            <div class="search-container">
+
+                <!-- <span class="material-symbols-rounded search-help" aria-checked="true">&#xe887</span> -->
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input type="search" class="seach-bar-ex" placeholder="caută">
+                <button type="button" onclick=""><span class="material-symbols-rounded search-help" aria-checked="true">&#xe887</span></button>
+            </div>
+            <!-- <p>Cu ajutorul acestei bare de căutare îți va fi mai ușor să găsești exrcițiul dorit din lista variată de exerciții clasice aici introduse</p>
+                ai nevoie de ajutor? cauta grupa musculara sau exercitiul dorit -->
+            
+            <div class="sectiune-cautare-img">
+                <img src="/images/human-body-frontal.jpg" alt="corpul uman" usemap="#mapa-muschi-1" id="corp-uman-frontal">
+
+                <div class="denumire-muschi" id="denumire-muschi"></div>
+
+                <map name="mapa-muschi-1">
+                    <area  alt="piept/pectorali" title="piept/pectorali" href="" coords="108,119,120,124,135,121,145,121,160,123,174,116,178,98,170,89,155,84,145,86,130,84,117,87,103,98" shape="poly" onmouseover="afDenumireMuschi(event, 'pectorali')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="deltoid" title="deltoid" href="" coords="85,114,91,106,101,99,115,86,106,82,96,85,89,92" shape="poly" onmouseover="afDenumireMuschi(event, 'deltoid')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="deltoid" title="deltoid" href="" coords="199,115,191,105,179,99,171,89,163,85,175,82,184,85,191,91,196,100" shape="poly" onmouseover="afDenumireMuschi(event, 'deltoid')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="biceps" title="biceps" href="" coords="103,100,101,120,93,132,78,145,76,136,84,120,91,109" shape="poly" onmouseover="afDenumireMuschi(event, 'biceps')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="biceps" title="biceps" href="" coords="180,101,180,117,191,131,205,140,206,131,201,120,193,109" shape="poly" onmouseover="afDenumireMuschi(event, 'biceps')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="sternocleidomastoid" title="sternocleidomastoid" href="" coords="153,61,145,65,145,74,144,85,149,75,154,67" shape="poly" onmouseover="afDenumireMuschi(event, 'sternocleidomastoid')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="sternocleidomastoid" title="sternocleidomastoid" href="" coords="136,84,136,74,134,65,128,60,128,70,130,77" shape="poly" onmouseover="afDenumireMuschi(event, 'sternocleidomastoid')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="abdomen/drept abdominal/rectus abdominis" title="abdomen/drept abdominal/rectus abdominis" href="" coords="121,126,138,122,145,122,160,124,161,135,159,182,146,217,136,217,121,186,120,135" shape="poly" onmouseover="afDenumireMuschi(event, 'abdomen')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="trapez" title="trapez" href="" coords="127,73,130,78,130,84,117,84,111,80,123,79" shape="poly" onmouseover="afDenumireMuschi(event, 'trapez')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="trapez" title="trapez" href="" coords="154,72,152,80,157,83,163,83,171,81,159,80" shape="poly" onmouseover="afDenumireMuschi(event, 'trapez')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="cvatriceps" title="cvatriceps" href="" coords="116,200,110,214,103,225,104,258,109,277,112,287,125,294,133,290,134,270,125,239" shape="poly" onmouseover="afDenumireMuschi(event, 'cvatriceps')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="cvatriceps" title="cvatriceps" href="" coords="165,200,162,220,156,238,149,272,149,289,158,294,167,295,175,272,180,229" shape="poly" onmouseover="afDenumireMuschi(event, 'cvatriceps')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="dințați" title="dințați" href="" coords="175,117,162,124,171,130,168,135,173,142,179,126" shape="poly" onmouseover="afDenumireMuschi(event, 'dințați')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="dințați" title="dințați" href="" coords="107,121,120,126,112,133,114,136,110,143,105,131" shape="poly" onmouseover="afDenumireMuschi(event, 'dințați')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="oblici" title="oblici" href="" coords="161,124,170,129,166,134,173,142,171,151,171,164,172,171,172,179,156,198,161,179,163,139" shape="poly" onmouseover="afDenumireMuschi(event, 'oblici')" onmouseout="hideDenumireMuschi()">
+                    <area  alt="oblici" title="oblici" href="" coords="120,128,114,133,115,138,110,145,112,153,112,165,110,171,110,181,124,200,119,185,119,145" shape="poly" onmouseover="afDenumireMuschi(event, 'oblici')" onmouseout="hideDenumireMuschi()">
+                </map>
+
+                <img src="/images/human-body.jpg" alt="corpul uman" usemap="#mapa-muschi-2" id="corp-uman-spate">
+                <button type="button" onclick="schimbaImg()"><span class="material-symbols-outlined">360</span></button>
+
+            </div>
+
+        </div>
+
+    </main>
 </body>
 <script src="index.js"></script>
 </html>
