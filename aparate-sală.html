@@ -27,18 +27,27 @@
 
     <main>
 
-        <div class="sectiune-cautare">
+        <!-- <div class="sectiune-cautare">
 
             <div class="search-container">
 
-                <!-- <span class="material-symbols-rounded search-help" aria-checked="true">&#xe887</span> -->
+                 <span class="material-symbols-rounded search-help" aria-checked="true">&#xe887</span> 
                 <span class="material-symbols-outlined search-icon">search</span>
                 <input type="search" class="seach-bar-ex" placeholder="caută">
                 <button type="button" onclick=""><span class="material-symbols-rounded search-help" aria-checked="true">&#xe887</span></button>
-            </div>
-            <!-- <p>Cu ajutorul acestei bare de căutare îți va fi mai ușor să găsești exrcițiul dorit din lista variată de exerciții clasice aici introduse</p>
+            </div> 
+             <p>Cu ajutorul acestei bare de căutare îți va fi mai ușor să găsești exrcițiul dorit din lista variată de exerciții clasice aici introduse</p>
                 ai nevoie de ajutor? cauta grupa musculara sau exercitiul dorit -->
-            
+            <div style="display: flex; flex-direction: row; gap: 1rem; ">
+            <div style=" background-color:rgba(141, 133, 133, 0.347); border-radius: 25px; padding: 2%; ">
+                <p style="color:rgb(147, 139, 139);">
+                    În această pagină sunt enumerate câteva dintre cele mai întălnite exerciții, care sunt folosite atât de începători cât și de sportivi cu experiență.  
+                </p>
+                <h3 style="color:rgb(123, 116, 116);"><b>Există două tipuri de exerciții:</b></h3>
+                <p style="color:rgb(147, 139, 139);"><b style="color:rgba(225, 107, 68, 0.825);">Exerciții compuse:</b> Acest tip de exerciții implică mai multe articulații și grupe musculare simultan. Câteva exemple de astfel de exerciții de baza sunt genuflexiunile (squat), îndreptările (deadlift), bench press, ramat cu haltera sau presă. Exercițiile compuse sunt fundamentale pentru dezvoltarea generală a masei musculare, deoarece îți permit să folosești greutăți mai mari și să pui în acțiune mai multe fibre musculare.
+                 <br><br><b style="color:rgba(225, 107, 68, 0.825);">Exerciții izolate:</b> Aceste exerciții vizează o singură grupa musculară și sunt utile pentru a accentua anumite părți ale corpului. Câteva exemple sunt flexiile pentru biceps, extensiile pentru triceps sau ridicările laterale pentru umeri. Aceste exerciții sunt esențiale pentru completarea antrenamentului și pentru dezvoltarea musculară armonioasă.
+                </p>
+            </div>
             <div class="sectiune-cautare-img">
                 <img src="/images/human-body-frontal.jpg" alt="corpul uman" usemap="#mapa-muschi-1" id="corp-uman-frontal">
 
@@ -63,12 +72,430 @@
                     <area  alt="oblici" title="oblici" href="" coords="120,128,114,133,115,138,110,145,112,153,112,165,110,171,110,181,124,200,119,185,119,145" shape="poly" onmouseover="afDenumireMuschi(event, 'oblici')" onmouseout="hideDenumireMuschi()">
                 </map>
 
+
+                <map name="mapa-muschi-2">
+                    <area target="" alt="Trapez" title="Trapez" href="" coords="130,66,103,74,109,81,120,83,123,110,139,132,139,145,151,145,151,135,165,113,171,82,179,80,186,76,157,64" shape="poly" onmouseover="afDenumireMuschi(event, 'Trapez')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Deltoid" title="Deltoid" href="" coords="171,83,189,87,193,97,202,107,202,97,198,82,185,74" shape="poly" onmouseover="afDenumireMuschi(event, 'Deltoid')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Deltoid" title="Deltoid" href="" coords="84,106,97,95,100,85,118,83,110,78,103,74,93,79,86,88" shape="poly" onmouseover="afDenumireMuschi(event, 'Deltoid')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Marele Dorsal" title="Marele Dorsal" href="" coords="167,116,183,118,175,143,170,172,149,188,134,187,123,178,116,162,114,147,103,117,123,115,133,130,137,142,153,143,153,132" shape="poly" onmouseover="afDenumireMuschi(event, 'Marele Dorsal')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Triceps" title="Triceps" href="" coords="194,126,192,138,183,124,185,111,189,95,201,108,209,125,207,140,205,150" shape="poly" onmouseover="afDenumireMuschi(event, 'Triceps')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Triceps" title="Triceps" href="" coords="87,145,91,123,80,140,75,129,82,107,97,97,102,118" shape="poly" onmouseover="afDenumireMuschi(event, 'Triceps')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Fesier" title="Fesier" href="" coords="146,220,147,202,158,188,176,179,177,202,174,225,167,228,149,230" shape="poly" onmouseover="afDenumireMuschi(event, 'Fesier')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="Fesier" title="Fesier" href="" coords="119,181,132,190,141,206,143,222,139,229,124,231,115,218,111,199" shape="poly" onmouseover="afDenumireMuschi(event, 'Fesier')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="biceps femural" title="biceps femural" href="" coords="147,232,169,234,176,258,171,299,158,302,149,296" shape="poly" onmouseover="afDenumireMuschi(event, 'biceps femural')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="biceps femural" title="biceps femural" href="" coords="115,236,125,231,140,229,144,245,137,273,137,305,127,300,115,302,111,281,105,259" shape="poly" onmouseover="afDenumireMuschi(event, 'biceps femural')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="gastrocnemian" title="gastrocnemian" href="" coords="162,303,149,308,147,338,147,352,159,348,171,349,174,330,170,306,153,305" shape="poly" onmouseover="afDenumireMuschi(event, 'gastrocnemian')" onmouseout="hideDenumireMuschi()">
+                    <area target="" alt="gastrocnemian" title="gastrocnemian" href="" coords="127,302,117,306,112,332,118,346,131,350,140,347,142,334,135,310" shape="poly" onmouseover="afDenumireMuschi(event, 'gastrocnemian')" onmouseout="hideDenumireMuschi()">
+                </map>
+
                 <img src="/images/human-body.jpg" alt="corpul uman" usemap="#mapa-muschi-2" id="corp-uman-spate">
                 <button type="button" onclick="schimbaImg()"><span class="material-symbols-outlined">360</span></button>
 
             </div>
-
         </div>
+            <div class="exercitiu">
+                <h2>Împins cu bara la piept (Bench Press)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Întinde-te pe o bancă orizontală, cu ochii direct sub bară.</li>
+                    <li>Picioarele trebuie să fie bine fixate pe podea.</li>
+                    <li>Prilejirea barei puțin mai largă decât lățimea umerilor.</li>
+                    <li>Coborâre controlată a barei spre partea inferioară a pieptului.</li>
+                    <li>Coatele ușor îndoite pe parcursul mișcării.</li>
+                    <li>Menține spatele plat pe bancă (poți crea un arc mic).</li>
+                    <li>Ridică bara într-o mișcare controlată, verticală.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Ridicarea șoldurilor de pe bancă.</li>
+                    <li>Bounce-ul barei de piept.</li>
+                    <li>Coborârea prea rapidă a barei.</li>
+                    <li>Blocarea coatelor în partea de sus.</li>
+                    <li>Priză prea largă sau prea îngustă.</li>
+                    <li>Nu menținerea controlului asupra barei.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Flexii cu bara EZ (EZ Bar Curl)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Stai în picioare cu picioarele la lățimea umerilor.</li>
+                    <li>Ține bara EZ cu o priză subapucare, la lățimea umerilor sau puțin mai îngustă.</li>
+                    <li>Coatele aproape de corp și fixe.</li>
+                    <li>Ridică bara spre umeri, contractând bicepsul.</li>
+                    <li>Menține o scurtă contracție în partea de sus.</li>
+                    <li>Coborâre controlată a barei înapoi.</li>
+                    <li>Evită balansarea corpului.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului (balansarea corpului).</li>
+                    <li>Mișcarea coatelor de pe lângă corp.</li>
+                    <li>Nu efectuarea unei game complete de mișcare.</li>
+                    <li>Coborârea rapidă a greutății.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Izolare</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Ușor spre mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Genuflexiuni cu haltera (Barbell Squats)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Poziționează bara pe partea superioară a spatelui (trapezi).</li>
+                    <li>Picioarele la lățimea umerilor sau puțin mai larg, degetele ușor spre exterior.</li>
+                    <li>Menține spatele drept și pieptul în față.</li>
+                    <li>Coborâre controlată, ca și cum te-ai așeza, greutatea pe călcâie.</li>
+                    <li>Încearcă să ajungi cu pliul șoldului sub nivelul genunchiului (dacă mobilitatea permite).</li>
+                    <li>Genunchii urmăresc linia degetelor, fără a depăși prea mult vârful.</li>
+                    <li>Ridică-te menținând spatele drept și contractând gluteii.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Lăsarea genunchilor să se îndoaie spre interior (valgus).</li>
+                    <li>Aplecarea excesivă a trunchiului în față.</li>
+                    <li>Ridicarea pe vârfuri în timpul ascensiunii.</li>
+                    <li>Coborârea prea rapidă sau incompletă.</li>
+                    <li>Nu menținerea tensiunii în nucleu (core).</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Mediu spre avansat</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Îndreptări românești (Romanian Deadlifts - RDL)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Stai în picioare cu picioarele la lățimea umerilor.</li>
+                    <li>Ține o bară cu o priză suprapusă, la lățimea umerilor.</li>
+                    <li>Menține o ușoară flexie a genunchilor pe tot parcursul mișcării.</li>
+                    <li>Împinge șoldurile înapoi și coboară bara pe verticală, menținând spatele drept.</li>
+                    <li>Bara coboară până sub genunchi sau până simți o întindere semnificativă în ischio-jambieri.</li>
+                    <li>Contractă gluteii și ischio-jambierii pentru a reveni la poziția inițială.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Îndoirea excesivă a genunchilor.</li>
+                    <li>Rotunjirea spatelui.</li>
+                    <li>Nu menținerea controlului asupra barei.</li>
+                    <li>Coborârea barei prea jos, pierzând tensiunea.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Îndreptări (Deadlifts)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Stai cu bara deasupra mijlocului tălpilor.</li>
+                    <li>Picioarele la lățimea umerilor sau puțin mai îngust.</li>
+                    <li>Apleacă-te și prinde bara cu o priză mixtă sau suprapusă.</li>
+                    <li>Menține spatele drept, pieptul în față și șoldurile mai jos decât umerii.</li>
+                    <li>Începe mișcarea împingând cu picioarele și ridicând șoldurile și umerii simultan.</li>
+                    <li>Menține bara aproape de corp.</li>
+                    <li>În partea de sus, blochează șoldurile și genunchii cu spatele drept.</li>
+                    <li>Coborâre controlată a barei.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Rotunjirea spatelui.</li>
+                    <li>Ridicarea șoldurilor prea repede.</li>
+                    <li>Lăsarea barei să se îndepărteze de corp.</li>
+                    <li>Folosirea excesivă a brațelor.</li>
+                    <li>Coborârea rapidă și necontrolată.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Avansat</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Presă deasupra capului (Overhead Press / Shoulder Press)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Stai în picioare cu picioarele la lățimea umerilor.</li>
+                    <li>Ține bara în fața umerilor cu o priză suprapusă.</li>
+                    <li>Menține nucleul încordat și spatele drept.</li>
+                    <li>Împinge bara drept în sus deasupra capului.</li>
+                    <li>În partea de sus, bara ar trebui să fie deasupra mijlocului tălpilor.</li>
+                    <li>Coborâre controlată a barei înapoi.</li>
+                    <li>Evită balansarea corpului.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului (îndoirea spatelui).</li>
+                    <li>Nu menținerea nucleului încordat.</li>
+                    <li>Mișcarea barei în față sau în spate.</li>
+                    <li>Blocarea excesivă a coatelor.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Ramat la cablu (Cable Rows)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Așează-te pe banca aparatului cu picioarele fixate.</li>
+                    <li>Prinde mânerul cu o priză neutră sau suprapusă.</li>
+                    <li>Menține spatele drept, pieptul în față și brațele întinse.</li>
+                    <li>Trage mânerul spre abdomen, apropiind omoplații.</li>
+                    <li>Coatele ar trebui să se miște aproape de corp.</li>
+                    <li>Menține o scurtă contracție în spate.</li>
+                    <li>Returnează mânerul încet.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului (balansarea corpului).</li>
+                    <li>Rotunjirea spatelui.</li>
+                    <li>Nu apropierea completă a omoplaților.</li>
+                    <li>Extinderea rapidă a brațelor.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Ușor spre mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Împingeri la scripete pentru tricepși (Triceps Pushdowns)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Stai în picioare în fața aparatului.</li>
+                    <li>Prinde bara sau frânghia cu o priză suprapusă.</li>
+                    <li>Coatele aproape de corp și fixe.</li>
+                    <li>Extinde brațele în jos, contractând tricepsul.</li>
+                    <li>În partea de jos, brațele complet întinse (fără blocare).</li>
+                    <li>Returnează bara încet.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Mișcarea coatelor de pe lângă corp.</li>
+                    <li>Folosirea impulsului.</li>
+                    <li>Nu efectuarea unei game complete de mișcare.</li>
+                    <li>Coborârea rapidă a greutății.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Izolare</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Ușor</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Tracțiuni (Pull-ups)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Prinde o bară de tracțiuni cu o priză suprapusă, puțin mai lată decât umerii.</li>
+                    <li>Lasă-te să atârni liber.</li>
+                    <li>Trage corpul în sus până când bărbia depășește bara.</li>
+                    <li>Concentrează-te pe apropierea omoplaților.</li>
+                    <li>Coborâre controlată.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului (leg swings / kipping).</li>
+                    <li>Nu efectuarea unei game complete de mișcare.</li>
+                    <li>Nu apropierea omoplaților.</li>
+                    <li>Coborâre rapidă.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Compus</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Avansat</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Tracțiuni față (Face Pulls)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>Atașează o frânghie la un scripete înalt.</li>
+                    <li>Prinde capetele frânghiei cu o priză suprapusă.</li>
+                    <li>Trage frânghia spre față (frunte/urechi).</li>
+                    <li>În timpul tragerii, rotește mâinile spre exterior.</li>
+                    <li>Menține o scurtă contracție în spate.</li>
+                    <li>Returnează frânghia încet.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului.</li>
+                    <li>Nu efectuarea rotației externe.</li>
+                    <li>Tragerea cu brațele în loc de spate.</li>
+                    <li>Greutate prea mare.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Izolare</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Ușor spre mediu</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <div class="exercitiu">
+                <h2>Ridicări ale picioarelor (Leg Raises)</h2>
+                <div class="camp">
+                  <strong>Forma corectă:</strong>
+                  <ul>
+                    <li>(Atârnat de o bară/Culcat pe spate/La aparat) Ridică picioarele drept sau îndoite spre piept/tavan controlat.</li>
+                    <li>Menține partea inferioară a spatelui lipită de podea (în varianta culcat).</li>
+                    <li>Coboară încet.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Greșeli comune:</strong>
+                  <ul>
+                    <li>Folosirea impulsului (balansarea picioarelor).</li>
+                    <li>Nu menținerea controlului asupra mișcării.</li>
+                    <li>Arcuirea excesivă a spatelui (în varianta culcat).</li>
+                    <li>Nu efectuarea unei game complete de mișcare.</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Tip de exercițiu:</strong>
+                  <ul>
+                    <li>Izolare</li>
+                  </ul>
+                </div>
+                <div class="camp">
+                  <strong>Nivel de dificultate:</strong>
+                  <ul>
+                    <li>Ușor spre mediu</li>
+                  </ul>
+                </div>
+              </div>
+        
 
     </main>
 </body>
